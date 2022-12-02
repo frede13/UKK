@@ -1,0 +1,20 @@
+body{
+    background-color: rgba(23, 146, 31, 0.451);
+}
+
+.card-body{
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-img{
+    max-width: 25%;
+    flex: 1 0 25%;
+}
+
+.card-desc{
+    max-width: 70%;
+    flex: 1 0 70%;
+}
+
