@@ -21,14 +21,14 @@ Route::get('/', function () {
 
 route::get ('/makan',[makanController::class,'index']);
 
-route::get ('/makan/pesan',[makanController::class, 'store']); 
+route::get ('/makan/pesan',[DetailPesananController::class, 'index']); 
 
 route::get ('/makan/pesan/checkout',[makanController::class, 'checkout']);
+
+
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/ppppp', function () {
-    return view('makan');
-});
+

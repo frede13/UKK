@@ -13,7 +13,7 @@ class CreateDetailPesananTable extends Migration
      */
     public function up()
     {
-        Schema::create('_detail_pesanan', function (Blueprint $table) {
+        Schema::create('detail_pesanan', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
             $table->string('harga');
@@ -29,6 +29,6 @@ class CreateDetailPesananTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_detail_pesanan');
+        Schema::dropIfExists('detail_pesanan');
     }
 }
